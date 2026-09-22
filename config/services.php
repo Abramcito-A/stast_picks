@@ -35,4 +35,13 @@ return [
         ],
     ],
 
+    // ── API Deportiva (SportsData.io) ─────────────────────────────────────────
+    // Auth: header Ocp-Apim-Subscription-Key
+    // Docs: https://sportsdata.io/developers/api-documentation/soccer
+    'sports_api' => [
+        'key'         => env('SPORTS_API_KEY'),
+        'base_url'    => env('SPORTS_API_BASE_URL', 'https://api.sportsdata.io/v4/soccer/scores/json'),
+        'competition' => env('SPORTS_API_COMPETITION', 'UCL'),
+    ],
+
 ];
